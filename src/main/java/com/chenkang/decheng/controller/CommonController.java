@@ -14,7 +14,7 @@ public class CommonController {
 
     @GetMapping("test")
     public  String test(){
-        return "张三";
+        return "张三1";
     }
 
 
