@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE urlrewrite PUBLIC "-//tuckey.org//DTD UrlRewrite 4.0//EN"
+        "http://www.tuckey.org/res/dtds/urlrewrite4.0.dtd">
+
+<urlrewrite>
+
+
+    <!-- 静态网页 -->
+    <rule>
+        <from>^/user/(\w+)\.html$</from>
+        <to>/user/go/</to>
+    </rule>
+
+</urlrewrite>

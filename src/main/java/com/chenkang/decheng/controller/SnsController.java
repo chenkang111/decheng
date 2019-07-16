@@ -1,11 +1,5 @@
 package com.chenkang.decheng.controller;
 
-import java.io.IOException;
-import java.util.Map;
-
-import javax.servlet.http.HttpServletRequest;
-import javax.servlet.http.HttpServletResponse;
-
 import com.chenkang.decheng.model.Wxuser;
 import com.chenkang.decheng.service.WxUserService;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -15,6 +9,10 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.weixin4j.Weixin;
 import org.weixin4j.WeixinException;
 import org.weixin4j.model.sns.SnsUser;
+
+import javax.servlet.http.HttpServletRequest;
+import javax.servlet.http.HttpServletResponse;
+import java.io.IOException;
 
 
 /**
@@ -62,7 +60,6 @@ public class SnsController {
 			} else {
 				System.out.println("用户已存在数据库");
 			}
-
 			response.sendRedirect("http://sate5g.natappfree.cc/yuecheng/login");
 		}
 
